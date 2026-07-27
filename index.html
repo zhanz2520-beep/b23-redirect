@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=https://landing.www.bilibili.com.huisheng.xyz/RfbDE.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>跳转中</title>
 </head>
 <body>
-<script>location.href="https://landing.www.bilibili.com.huisheng.xyz/RfbDE.html"</script>
+<script>
+// 直接唤起QQ加群
+window.location.href = "mqqapi://card/show_pslcard?src_type=internal&version=1&uin=618460084&card_type=group";
+// 如果QQ没唤醒，跳落地页(有二维码)
+setTimeout(function() {
+    window.location.href = "https://landing.www.bilibili.com.huisheng.xyz/landing.html";
+}, 500);
+</script>
 </body>
 </html>
